@@ -1,24 +1,24 @@
-SELECT name, year 
+SELECT album_name, year 
 FROM albums 
 WHERE year = 2018;
 
-SELECT name,length
+SELECT track_name,length
 FROM tracks
 ORDER BY length DESC
 LIMIT 1;
 
-SELECT name
+SELECT track_name
 FROM tracks 
 WHERE length >= 3.5;
 
-SELECT name
+SELECT collection_name
 FROM collections 
 WHERE year BETWEEN 2018 AND 2020;
 
-SELECT name
+SELECT singer_name
 FROM singers
-WHERE name NOT LIKE '% %'; 
+WHERE singer_name NOT LIKE '% %'; 
 
-SELECT name
+SELECT track_name
 FROM tracks 
-WHERE name ILIKE '%my%';
+WHERE track_name ILIKE '%my%';
